@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPS</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="blank">
+            <!-- rrrrrrrrrrrrrrrrrr -->
+        </div>
+        <div class="Themes" id="intro">
+            <h1> Winning Rules of <span>The Rock-paper-scissor</span> game as follows:</h1>
+            <h3> rock vs paper => <span> paper wins</span> </h3>
+            <h3> rock vs scissor => <span> rock wins</span> </h3>
+            <h3> paper vs scissor => <span> scissor wins</span></h3>
+            <div>
+                <button onclick = "game_page()" >START</button>
+            </div>
+        </div>
+        <div class="Themes" id="choices" >
+            <div id="div-btn">
+                <button id="btn">PLAY</button>
+            </div>
+            <!-- <h2>Choose your choice</h2> -->
+            <div class="radios">
+                <div id="rock" class="press">
+                    <input type="radio"  name="choice"  value="1">
+                </div>
+                <div id="paper" class="press">
+                    <input type="radio"  name="choice"  value="2">
+                </div>
+                <div id="scissor" class="press">
+                    <input type="radio"  name="choice"  value="3">
+                </div>
+            </div>
+            <!-- <p id="output"></p> -->
+        </div>
+        <div class="Themes" id="outputs">
+            <div id="output4"></div>
+            <div id="output1">
+                <h1>YOU</h1>
+                <div id="img-stack-1">
+                    <div id="p1" ></div>
+                    <div id="r1" ></div>
+                    <div id="s1" ></div>
+                </div>
+            </div>
+            <div id="output2"></div>
+            <div id="output3">
+                <h1>COMPUTER</h1>
+                <div id="img-stack-2">
+                    <div id="p2" ></div>
+                    <div id="r2" ></div>
+                    <div id="s2" ></div>
+                </div>
+            </div>
+        </div >
+        <div id="output5"></div>                   
+        <script src="script.js"></script>
+    </body>
+</html>
