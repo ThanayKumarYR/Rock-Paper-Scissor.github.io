@@ -52,6 +52,7 @@ const btn = document.querySelector('#btn');
             // show the output:
             // output.innerText = choice ? `You selected ${choice}` : `You haven't selected any size`;
             choice = Number(choice);
+            
             var newtop;
             var topp1 ;
             var topp2 ;
@@ -68,8 +69,12 @@ const btn = document.querySelector('#btn');
              c.zIndex = "100" ;
              b.zIndex = "1000";
           }
+
+          var choice_name;
+
+
             if(choice == 1){
-              var choice_name = 'rock';
+              choice_name = 'rock';
               newtop = 'r1';
               topp1 = 'p1';
               topp2 = 's1'
@@ -77,7 +82,7 @@ const btn = document.querySelector('#btn');
               document.getElementById('r1').style.visibility = "visible";
             }
             else if(choice == 2){
-              var choice_name = 'paper';
+              choice_name = 'paper';
               newtop = 'p1';
               topp1 = 's1';
               topp2 = 'r1';
@@ -86,7 +91,7 @@ const btn = document.querySelector('#btn');
             }
 
             else if(choice == 3){
-              var choice_name = 'scissor';
+              choice_name = 'scissor';
               newtop = 's1';
               topp1 = 'r1';
               topp2 = 'p1';
@@ -94,20 +99,20 @@ const btn = document.querySelector('#btn');
               document.getElementById('s1').style.visibility = "visible";
             }
             // output1.innerText =  choice_name? `Your choice is : ${choice_name} ` : `You haven't selected any size`;
-            let comp_choice = Math.floor((Math.random() * 3) + 1);
+            var comp_choice = Math.floor((Math.random() * 3) + 1);
+            var comp_choice_name;
             
             while(choice == comp_choice)
-            
                 comp_choice = Math.floor((Math.random() * 3) + 1);
                 if(comp_choice == 1){
-                  var comp_choice_name = "rock";
+                  comp_choice_name = "rock";
                   newtop = 'r2';
                   topp1 = 'p2';
                   topp2 = 's2';
                   toTop(newtop,topp1,topp2);
                 }
                 else if(comp_choice == 2){
-                  var comp_choice_name = "paper";
+                  comp_choice_name = "paper";
                   newtop = 'p2';
                   topp1 = 's2';
                   topp2 = 'r2';
@@ -115,8 +120,7 @@ const btn = document.querySelector('#btn');
 
                 }
                 else if(comp_choice == 3){
-                  var comp_choice_name = "scissor";
-                  var choice_name = 'scissor';
+                  comp_choice_name = "scissor";
                   newtop = 's2';
                   topp1 = 'r2';
                   topp2 = 'p2';
@@ -125,27 +129,28 @@ const btn = document.querySelector('#btn');
                 }
                 
                 // output3.innerText = `Computer choice is : ${comp_choice_name}`;
-                
+            
+            var result;
             if (choice == 1 && comp_choice == 2 || choice == 2 && comp_choice == 1){
 
                 output4.innerText = "<= paper wins => ";
-                var result = "paper";
+                result = 2;
             }
             else if (choice == 1 && comp_choice == 3 || choice == 3 && comp_choice == 1){
 
                 output4.innerText = "<= rock wins =>";
-                var result = "rock"
+                result = 1;
             }
             else{
                 
                 output4.innerText = "<= scissor wins =>";
-                var result = "scissor"
+                result = 3;
             }
 
             
             
-            if (result == choice_name){
-              output5.innerText = "<== So Computer wins ==>";
+            if (result == choice){
+              output5.innerText = "<== So User wins ==>";
               $(document).ready(function(){
                 const myTimeout = setTimeout(() => {
                     var dom_intro1 = document.getElementById('output5').style;
@@ -156,7 +161,7 @@ const btn = document.querySelector('#btn');
               }); 
             }
             else{
-              output5.innerText = "<== So User wins ==>";
+              output5.innerText = "<== So Computer wins ==>";
               $(document).ready(function(){
                 const myTimeout = setTimeout(() => {
                     var dom_intro1 = document.getElementById('output5').style;
