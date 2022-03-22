@@ -190,6 +190,7 @@ button{
     height: 10vh;
     margin: 0%;
     width: 100%;
+    font-size: 300%;
     position: relative;
     right:12%;
     top: 5%;
@@ -264,7 +265,7 @@ button{
     right: 25%;
     order: 2;
     height: 5vh;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     /* margin: 0.3% 0%; */
 }
@@ -346,6 +347,7 @@ button{
     z-index: 0;
     width: 50%;
     height: 10vh;
+    font-size: 300%;
     position:relative;
     top:48vh;
     display: flex;
