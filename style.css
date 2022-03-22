@@ -185,15 +185,7 @@ button{
     
 } */
 
-#output4{
-    /* border: 1px solid yellow; */
-    height: 10vh;
-    margin: 0%;
-    width: 100%;
-    position: relative;
-    right:12%;
-    top: 5%;
-}
+
 #output1{
     /* border: 1px solid rgb(21, 201, 214); */
     /* margin: 0.3% 0%; */
@@ -264,7 +256,7 @@ button{
     right: 25%;
     order: 2;
     height: 5vh;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     /* margin: 0.3% 0%; */
 }
@@ -339,6 +331,18 @@ button{
     background-size: 100%;
     background-color: #137e19;
     /* border-radius: 10px; */
+}
+
+
+#output4{
+    /* border: 1px solid yellow; */
+    height: 10vh;
+    margin: 0%;
+    font-size: 300%;
+    width: 100%;
+    position: relative;
+    right:12%;
+    top: 5%;
 }
 
 #output5{
