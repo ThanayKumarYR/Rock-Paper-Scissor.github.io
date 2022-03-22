@@ -49,10 +49,12 @@ const btn = document.querySelector('#btn');
                     break;
                 }
             }
+
             // show the output:
             // output.innerText = choice ? `You selected ${choice}` : `You haven't selected any size`;
+
             choice = Number(choice);
-            
+
             var newtop;
             var topp1 ;
             var topp2 ;
@@ -81,6 +83,7 @@ const btn = document.querySelector('#btn');
               toTop(newtop,topp1,topp2);
               document.getElementById('r1').style.visibility = "visible";
             }
+            
             else if(choice == 2){
               choice_name = 'paper';
               newtop = 'p1';
@@ -131,16 +134,19 @@ const btn = document.querySelector('#btn');
                 // output3.innerText = `Computer choice is : ${comp_choice_name}`;
             
             var result;
+
             if (choice == 1 && comp_choice == 2 || choice == 2 && comp_choice == 1){
 
                 output4.innerText = "<= paper wins => ";
                 result = 2;
             }
+
             else if (choice == 1 && comp_choice == 3 || choice == 3 && comp_choice == 1){
 
                 output4.innerText = "<= rock wins =>";
                 result = 1;
             }
+
             else{
                 
                 output4.innerText = "<= scissor wins =>";
@@ -160,6 +166,7 @@ const btn = document.querySelector('#btn');
                   },500);
               }); 
             }
+
             else{
               output5.innerText = "<== So Computer wins ==>";
               $(document).ready(function(){
