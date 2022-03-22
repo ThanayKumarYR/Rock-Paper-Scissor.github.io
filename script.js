@@ -145,7 +145,7 @@ const btn = document.querySelector('#btn');
             
             
             if (result == choice_name){
-              output5.innerText ="<== So User wins ==>";
+              output5.innerText = "<== So Computer wins ==>";
               $(document).ready(function(){
                 const myTimeout = setTimeout(() => {
                     var dom_intro1 = document.getElementById('output5').style;
@@ -156,7 +156,7 @@ const btn = document.querySelector('#btn');
               }); 
             }
             else{
-              output5.innerText ="<== So Computer wins ==>";
+              output5.innerText = "<== So User wins ==>";
               $(document).ready(function(){
                 const myTimeout = setTimeout(() => {
                     var dom_intro1 = document.getElementById('output5').style;
