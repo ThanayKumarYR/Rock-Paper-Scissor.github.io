@@ -177,13 +177,6 @@ button{
     visibility: visible;
 }
 
-/* #outputs h3,
-#outputs h2,
-#outputs span{
-    border: 1px solid red;
-    width: 100%;
-    
-} */
 
 #output4{
     /* border: 1px solid yellow; */
@@ -195,6 +188,7 @@ button{
     right:12%;
     top: 5%;
 }
+
 #output1{
     /* border: 1px solid rgb(21, 201, 214); */
     /* margin: 0.3% 0%; */
@@ -342,8 +336,21 @@ button{
     /* border-radius: 10px; */
 }
 
+
+#output4{
+    /* border: 1px solid yellow; */
+    height: 10vh;
+    margin: 0%;
+    font-size: 300%;
+    width: 100%;
+    position: relative;
+    right:12%;
+    top: 5%;
+}
+
 #output5{
     border: 1px solid rebeccapurple;
+    font-size: 300%;
     z-index: 0;
     width: 50%;
     height: 10vh;
